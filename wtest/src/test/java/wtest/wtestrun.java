@@ -31,11 +31,11 @@ public class wtestrun {
 		//options.addArguments("disable-infobars");
 		//options.addArguments("disable-gpu");
 		options.merge(caps);
-		URL url = new URL("http://18.233.10.79:49154/wd/hub");
+		URL url = new URL("http://3.95.171.244:49154/wd/hub");
 		//driver = new ChromeDriver(options);
 		driver = new RemoteWebDriver(url, options);
 		//driver.get("http://3.95.161.130:49154/wd/hub");
-		driver.get("http://18.233.10.79");
+		driver.get("http://3.95.171.244");
 		//driver.get("http://18.233.10.79");
 		Thread.sleep(6000);
 		System.out.print("Title of the page is: " + driver.getTitle() + "\n");
