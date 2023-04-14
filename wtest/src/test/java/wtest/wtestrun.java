@@ -18,7 +18,7 @@ public class wtestrun {
 	}
 	
 	@Test
-	public static void Browser1() throws Exception {
+	public static void Browser1() throws InterruptedException {
 		
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
@@ -28,7 +28,7 @@ public class wtestrun {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setAcceptInsecureCerts(true);
 		options.addArguments("--headless", "--disable-gpu", "--window-size=1580,12800","--ignore-certificate-errors",
-                "--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+                "--disable-extensions","--no-sandbox","--disable-dev-shm-usage", "--disable-crash-reporter");
 		//options.addArguments("disable-infobars");
 		//options.addArguments("disable-gpu");
 		options.merge(caps);
